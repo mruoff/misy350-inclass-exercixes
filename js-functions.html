@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> JS Functions Excercises</title>
+</head>
+
+<body>
+  <h1> JS Functions - see console for outputs</h1>
+  <script>
+
+  function get_product(a, b){
+    return a * b;
+  }
+  console.log (get_product(3,9));
+
+  const get_sum = (a, b) => {
+    return a+b;
+  }
+console.log(get_sum(2,2));
+
+const get_square = a =>
+  a *a;
+console.log (get_square(3));
+
+//let letter_grade;//this is a global variable becuase it is outside of the curly braces/function. *you don't need a global variable here (you could make it a blick variable by putting it in the curly braces)
+function get_letter_grade (grade){
+  let letter_grade;
+  if (grade>=90){
+    letter_grade = "A";
+  }else if (grade >= 80){
+    letter_grade = "B";
+  }else{
+    letter_grade = "C";
+  }
+  return letter_grade;
+}
+
+console.log(get_letter_grade(65));
+  </script>
+</body>
+
+
+</html>
